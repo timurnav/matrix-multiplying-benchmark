@@ -2,7 +2,7 @@ package com.developer.timurnav;
 
 import com.developer.timurnav.multipliers.BaseMatrixMultiplier;
 import com.developer.timurnav.multipliers.ConcurrentMatrixMultiplier;
-import com.developer.timurnav.multipliers.TranspondedMatrixMulptiplier;
+import com.developer.timurnav.multipliers.TransposedMatrixMultiplier;
 import com.developer.timurnav.util.MatrixUtil;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -36,7 +36,7 @@ public class MatrixMultiplierTest {
     @DataProvider
     public static Object[][] getMultipliers() {
         return new Object[][]{
-                {new TranspondedMatrixMulptiplier()},
+                {new TransposedMatrixMultiplier()},
                 {new ConcurrentMatrixMultiplier(executor)}
         };
     }

@@ -6,7 +6,7 @@ import com.developer.timurnav.MatrixMultiplier;
  * @author timurnav
  *         on 23.09.2016.
  */
-public class TranspondedMatrixMulptiplier implements MatrixMultiplier{
+public class TransposedMatrixMultiplier implements MatrixMultiplier{
 
 
     @Override

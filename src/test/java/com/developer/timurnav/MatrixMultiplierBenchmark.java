@@ -2,7 +2,7 @@ package com.developer.timurnav;
 
 import com.developer.timurnav.multipliers.BaseMatrixMultiplier;
 import com.developer.timurnav.multipliers.ConcurrentMatrixMultiplier;
-import com.developer.timurnav.multipliers.TranspondedMatrixMulptiplier;
+import com.developer.timurnav.multipliers.TransposedMatrixMultiplier;
 import com.developer.timurnav.util.MatrixUtil;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;
@@ -59,8 +59,8 @@ public class MatrixMultiplierBenchmark {
     }
 
     @Benchmark
-    public int[][] transponded() throws Exception {
-        return new TranspondedMatrixMulptiplier().multiply(matrixA, matrixB);
+    public int[][] transposed() throws Exception {
+        return new TransposedMatrixMultiplier().multiply(matrixA, matrixB);
     }
 
     @Benchmark
